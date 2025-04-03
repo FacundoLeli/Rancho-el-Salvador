@@ -1,0 +1,66 @@
+@use "../base/variables";
+@use "../utils/mixins";
+@use "sass:color";
+
+/* CONTACTO */
+.contact {
+  @include mixins.center-content;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contact-form {
+  width: 85%;
+  max-width: 600px;
+  background: #eee;
+  padding: 30px 40px;
+  border-radius: 8px;
+  text-align: center;
+
+  h1 {
+    font-weight: 500;
+    margin-top: 0;
+  }
+}
+
+.form {
+  border: 1px solid #a9a9a9;
+  margin: 7px 0;
+  padding: 6px 20px;
+  border-radius: 8px;
+
+  label {
+    font-size: 13px;
+    color: #000;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    font-size: 19px;
+    margin-top: 5px;
+    border: none;
+    background: none;
+    outline: none;
+
+    &:focus {
+      border-color: variables.$color-btn-reserva;
+      box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+    }
+  }
+}
+
+.button {
+  width: 100%;
+  display: inline-block;
+  background-color: variables.$color-btn-reserva;
+  padding: 14px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 8px;
+  cursor: pointer;
+  color: variables.$color-principal;
+}

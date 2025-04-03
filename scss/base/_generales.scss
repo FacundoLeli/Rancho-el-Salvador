@@ -1,0 +1,43 @@
+@use "variables";
+@use "../utils/mixins";
+@use "sass:color";
+
+/* GENERAL */
+:root {
+  --color-principal: #{variables.$color-principal};
+  --color-secundario: #{variables.$color-secundario};
+  --font-size-h1: #{variables.$font-size-h1};
+  --font-size-p: #{variables.$font-size-p};
+}
+
+body {
+  @include mixins.background-image("../img/Dia/D7.jpeg");
+  color: variables.$color-principal;
+  min-height: 100vh;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  body {
+    background-position: center top;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-position: center top;
+  }
+}
+
+@media (max-width: 991px) {
+  body .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease;
+  }
+}
+
+/* CORRECCION DEL LOGO */
+.logo-nav {
+  margin-top: -15px;
+}

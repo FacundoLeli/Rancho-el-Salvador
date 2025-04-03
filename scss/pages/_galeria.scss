@@ -1,0 +1,38 @@
+@use "../base/variables";
+@use "../utils/mixins";
+@use "sass:color";
+
+/* GALERIA */
+.page-title {
+  text-align: center;
+
+  h1 {
+    font-size: variables.$font-size-h1;
+    color: variables.$color-principal;
+  }
+}
+
+.container p {
+  margin-bottom: 0;
+}
+
+.gallery {
+  padding: 80px 0;
+
+  img {
+    max-width: 100%;
+    background: variables.$color-principal;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+}
+
+#gallery-popup .modal-img {
+  width: 100%;
+}
+
+nav.navbar {
+  margin-bottom: 0;
+}

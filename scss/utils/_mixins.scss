@@ -1,0 +1,16 @@
+/* MIXIN PARA CENTRAR CONTENIDO */
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MIXIN PARA IMAGEN DE FONDO */
+@mixin background-image($url, $position: center, $attachment: fixed) {
+    background: url($url) rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: $position;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: $attachment;
+}

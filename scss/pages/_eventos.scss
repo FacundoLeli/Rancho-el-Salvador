@@ -1,0 +1,91 @@
+@use "../base/variables";
+@use "../utils/mixins";
+@use "sass:color";
+
+/* EVENTOS */
+.eventos {
+  padding: 50px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: variables.$color-principal;
+  }
+}
+
+.eventos-destacados {
+  text-align: center;
+  margin-bottom: 40px;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: variables.$color-principal;
+  }
+}
+
+.evento,
+.instalacion {
+  width: 300px;
+  margin: 20px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: inline-block;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+}
+
+.btn-reservar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: variables.$color-btn-reserva;
+  color: variables.$color-principal;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: color.adjust(variables.$color-btn-reserva, $lightness: 10%);
+  }
+}
+
+.instalaciones-contenedor {
+  text-align: center;
+}
+
+.instalaciones {
+  margin-bottom: 40px;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: variables.$color-principal;
+  }
+}
