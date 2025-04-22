@@ -1,2 +1,5 @@
-Tercer-Entrega
-Voy a realizar la entrega correspondiente a la tercera etapa del proyecto, la cual consiste en una actualización de la página. Esta actualización incluye las cinco secciones desarrolladas en la primera y segunda entrega.
+Adjunto la entrega final del proyecto "Rancho El Salvador". Esta versión incluye la integración de las cinco secciones desarrolladas en las etapas anteriores, presentando la página web actualizada en su totalidad.
+
+Se han aplicado los conocimientos adquiridos para lograr un resultado que cumpla con los objetivos del proyecto.
+
+Gracias por su guía durante este proceso.
